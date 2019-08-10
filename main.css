@@ -1,0 +1,647 @@
+html,body,header,h1,h2,h3,h4,h5,h6,p,a,article,section,footer,ul,ol,dl,li,dd,dt {
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+a {
+	color:#000;
+	text-decoration: none;
+}
+h2 {
+	font-family:'titillium-bold';
+	text-transform: uppercase;
+}
+p {
+	font-family:'titillium-reg';
+}
+.col-centered {
+	float:none;
+	margin:0 auto;
+}
+.clear {
+	clear:both;
+}
+.flex-container {
+	display:flex;
+}
+/* creates small underline for each heading h2 in the main content */
+.main-content-headings:after {
+	content:"";
+	display:block;
+	width:87px;
+	height:4px;
+	position:absolute;
+	right:50%;
+	bottom:0;
+	transform: translate(50%, -50%);
+}
+/* centers every h2 and heading p in every section and article following main */
+main section h2, main section p, main article h2, main article p {
+	text-align:center;
+}
+dl dt {
+	font-family:'titillium-bold';
+	font-size:23px;
+	text-transform: uppercase;
+}
+
+/**===================
+	MAIN HEADER
+	===============**/
+#main-header {
+	background:rgba(135,80,156,1);
+	color:rgba(247,243,234,1);
+	padding:57px 0 147px;
+}
+#main-header article {
+	padding-top:145px;
+	text-align: center;
+}
+#main-header article h2 {
+	font-size:42.16px;
+	padding:0 74px;
+}
+#main-header article button {
+	background:rgba(235,125,75,1);
+	border:none;
+	border-bottom:4px solid #c86a40;
+	border-radius:5px;
+	font-family:'titillium-semibold';
+	font-size:18px;
+	margin-top:62px;
+	padding:28px 81px 24px;
+	text-transform: uppercase;
+}
+
+.navbar-nav {
+	float:right;
+}
+.navbar-custom {
+    background-color:#87509c;
+    color:#ffffff;
+    border-radius:0;
+}
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+}
+.navbar-custom .navbar-nav > .active > a {
+    color: #ffffff;
+    background-color:transparent;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus,
+.navbar-custom .navbar-nav > .open >a {
+    text-decoration: none;
+    background-color: #fff;
+    color:#87509c;
+}
+.navbar-custom .navbar-brand {
+    color:#eeeeee;
+    padding:0;
+}
+.navbar-custom .navbar-toggle {
+    background-color:#eeeeee;
+}
+.navbar-custom .icon-bar {
+    background-color:#87509c;
+}
+
+/**====================
+	SLIDER
+====================**/
+/* Slideshow container */
+#slider {
+  max-width: 100%;
+  width:100%;
+  position: relative;
+  margin: auto;
+}
+.slides img {
+	width:100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+	background:rgba(255,255,255,0.8);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+  	margin-top: -22px;
+  	padding: 25px;
+  	font-weight: bold;
+  	font-size: 22px;
+  	transition: 0.6s ease;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(255,255,255,1);
+  text-decoration:none;
+}
+
+/* The dots/bullets/indicators */
+#dots {
+	background:rgba(23,194,164,1);
+	padding:15px 0;
+	text-align:center;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/**========================
+	SERVICES WE PROVIDE
+	====================**/
+#services-we-provide {
+	background: rgba(23,194,164,1);
+	color:rgba(255,255,255,1);
+	padding:119px 0 130px;
+}
+#services-we-provide h2 {
+	font-size:40px;
+	padding-bottom:22px;
+	position:relative;
+}
+#services-we-provide h2:after {
+	background:rgba(0,0,0,0.15);
+}
+#services-we-provide p {
+	font-size:18px;
+	margin-top:24px;
+}
+#services-list {
+	margin-top:92px;
+	text-align: center;
+}
+#services-list div {
+	padding:0 35px;
+}
+#services-list dt {
+	margin-bottom:28px;
+}
+#services-list dd {
+	font-family:'titillium-light';
+	font-size:16px;
+}
+/* images are different sizes so adjust margin for each */
+#services-list div:nth-child(1) dt img {
+	margin:0 auto 60px;
+}
+#services-list div:nth-child(2) dt img {
+	margin:0 auto 55px;
+}
+#services-list div:nth-child(3) dt img {
+	margin:0 auto 62px;
+}
+#services-list div:nth-child(4) dt img {
+	margin:0 auto 56px;
+}
+#services-list img {
+	display:block;
+}
+
+/**===================
+	MEET THE TEAM
+	===============**/
+#meet-the-team {
+	background: rgba(231,241,248,1);
+	color:rgba(60,71,97,1);
+	padding:120px 0 127px;
+}
+#meet-the-team h2 {
+	font-size:41.29px;
+	padding-bottom:23px;
+	position:relative;
+}
+#meet-the-team h2:after {
+	background:rgba(189,209,223,0.75);
+}
+#meet-the-team p {
+	font-size:18.58px;
+	margin-top:25px;
+}
+#team-members-list {
+	margin-top:78px;
+	text-align: center;
+}
+#team-members-list div {
+	padding:0 29px;
+}
+#team-members-list dt:first-child {
+	margin-bottom:42px;
+}
+#team-members-list dt:nth-child(2) {
+	margin-bottom:16px;
+}
+#team-members-list dt + dd {
+	color:rgba(48,186,231,1);
+	font-family:'titillium-reg';
+	font-size: 16px;
+	margin-bottom:33px;
+}
+#team-members-list dd + dd {
+	font-family:'titillium-light';
+	font-size:16px;
+	margin:0 auto;
+	width:200px;
+}
+.social {
+	margin-top:30px;
+}
+.social li {
+	display:inline-block;
+	list-style-type: none;
+	margin:5.5px;
+}
+/**======================
+	WE GOT THE SKILLS
+	==================**/
+#we-got-skills {
+	background: rgba(255,255,255,1);
+	color:rgba(60,71,97,1);
+	padding:117px 0 123px;
+}
+#we-got-skills h2 {
+	font-size:40px;
+	padding-bottom:22px;
+	position:relative;
+}
+#we-got-skills h2:after {
+	background:rgba(223,232,237,1);
+}
+#we-got-skills p {
+	font-size:18px;
+	margin-top:25px;
+}
+#skills-list {
+	color:#3c4761;
+	margin-top:85px;
+	text-align: center;
+}
+#skills-list div {
+	position:relative;
+	height:215px;
+}
+#skills-list dt {
+	position: absolute;
+	bottom:0;
+	left:50%;
+	transform: translate(-50%,0);
+	width:100%;
+}
+.percent {
+	font-size:32px;
+}
+#skills-list dd {
+	border-radius:50%;
+	font-family:'titillium-light';
+	font-size: 50px;
+	padding-top:25px;
+	position:absolute;
+	left:50%;
+	transform: translate(-50%,0);
+	width:160px;
+	height:160px;
+}
+#skills-list div:nth-child(1) dd {
+	border:13px solid #30bae7;
+}
+#skills-list div:nth-child(2) dd {
+	border:13px solid #d74680;
+}
+#skills-list div:nth-child(3) dd {
+	border:13px solid #15c7a8;
+}
+#skills-list div:nth-child(4) dd {
+	border:13px solid #eb7d4b;
+}
+
+/**===================
+	OUR PORTFOLIO
+	===============**/
+#our-portfolio {
+	background: rgba(255,221,153,1);
+	color:rgba(57,57,57,1);
+	padding:120px 0 109px;
+}
+#our-portfolio h2 {
+	font-size:40px;
+	padding-bottom:22px;
+	position:relative;
+}
+#our-portfolio h2:after {
+	background:rgba(229,195,127,1);
+}
+#our-portfolio p {
+	font-family:'titillium-reg';
+	font-size:18px;
+	margin-top:24px;
+}
+#portfolio-nav {
+	text-transform: uppercase;
+	margin:43px auto 62px;
+	width:380px;
+}
+#portfolio-nav ul li {
+	background:rgba(0,0,0,0.08);
+	border-radius:5px;
+	cursor:pointer;
+	font-family:'titillium-reg';
+	font-size:18px;
+	list-style-type: none;
+	margin:0 8px;
+	padding:12px 0;
+	text-align: center;
+	width: 86px;
+}
+#portfolio-nav ul li:hover {
+	background:rgba(255,255,255,1);
+}
+#portfolio-items dt {
+	margin-bottom:32px;
+}
+#portfolio-items dt img {
+	width: 100%;
+}
+#portfolio-items dd {
+	color:#393939;
+	font-family:'titillium-reg';
+	font-size:18px;
+	text-align:center;
+}
+#portfolio-items div.row {
+	margin-bottom:65px;
+}
+#our-portfolio button {
+	background:rgba(23,194,164,1);
+	border:none;
+	border-bottom:4px solid #14a58c;
+	border-radius:5px;
+	color:#fff;
+	display:block;
+	font-family:'titillium-semibold';
+	font-size:18px;
+	margin:0 auto;
+	padding:29px 57px 25px;
+	text-transform: uppercase;
+}
+
+/**===================
+	FOOTER
+	===============**/
+footer {
+	background: rgba(52,75,142,1);
+	padding:46px 0;
+}
+footer ul {
+	text-align: center;
+}
+footer ul li {
+	display:inline-block;
+	font-family:'titillium-semibold';
+	font-size:24px;
+	list-style-type: none;
+}
+footer a {
+	color:#fff;
+	padding:0 28.5px;
+}
+footer a:hover {
+	color:#30bae7;
+	text-decoration: none;
+}
+
+/**===================
+	MEDIA QUERIES
+	===============**/
+@media only screen and (max-width:1200px) {
+	/**===================
+		MAIN HEADER
+		===============**/
+	#main-header article h2 {
+		font-size: 39px;
+		padding:0;
+	}
+
+
+	/**===================
+		FOOTER
+		===============**/
+	footer ul li {
+		font-size:22px;
+	}
+}
+@media only screen and (max-width:990px) {
+	/**===================
+		MAIN HEADER
+		===============**/
+	#main-header article h2 {
+		font-size: 30px;
+		padding:0;
+	}
+	#main-header article button {
+		padding:25px 81px 21px;
+	}
+
+	/**========================
+		SERVICES WE PROVIDE
+		====================**/
+	#services-list {
+		margin-top:60px;
+	}
+	#services-list div {
+		margin-bottom:65px;
+	}
+	#services-list dt {
+		margin-bottom:8px;
+	}
+	#services-list dd {
+		font-size:18px;
+	}
+	dl dt {
+		font-size:28px;
+	}
+	#services-list div:nth-child(1) dt img,
+	#services-list div:nth-child(2) dt img,
+	#services-list div:nth-child(3) dt img,
+	#services-list div:nth-child(4) dt img {
+		margin-bottom:30px;
+	}
+
+	/**===================
+		MEET THE TEAM
+		===============**/
+	#team-members-list {
+		margin-top:70px;
+	}
+
+	#team-members-list dt + dd {
+		margin-bottom:25px;
+	}
+	#team-members-list dd + dd {
+		font-size:17px;
+		width:auto;
+	}
+	.social {
+		margin-bottom:40px;
+	}
+
+	/**===================
+		SKILLS
+		===============**/
+	#skills-list div {
+		margin-bottom:30px;
+	}
+	#skills-list {
+		margin-top:48px;
+	}
+
+	/**===================
+		PORTFOLIO
+		===============**/
+	#portfolio-nav ul li {
+		display:inline-block;
+	}
+	/* set to 0 as rows are now redundant */
+	#portfolio-items div.row {
+		margin-bottom:0;
+	}
+	#portfolio-items div div div {
+		margin-bottom:65px;
+	}
+
+	/**===================
+		FOOTER
+		===============**/
+	footer a {
+		padding:0 12.5px;
+	}
+}
+
+@media only screen and (max-width:768px) {
+	#main-header {
+		padding: 20px 0 70px;
+	}
+	#main-header h1 {
+		text-align:center;
+	}
+	
+	#main-header article {
+		padding-top:50px;
+	}
+	#main-header article h2 {
+		font-size:22px;
+	}
+	#main-header article button {
+		margin-top:48px;
+	}
+	.navbar-nav {
+		float:none;
+	}
+	.navbar-custom .navbar-brand {
+		padding-left:15px;
+	}
+
+	/**===================
+		SERVICES
+		===============**/
+	#services-we-provide {
+		padding:60px 0 50px;
+	}
+	#services-we-provide h2 {
+		font-size: 37px;
+	}
+	#services-list {
+		margin-top:50px;
+	}
+	#services-list div {
+		margin-bottom: 45px;
+	}
+
+	/**===================
+		MEET THE TEAM
+		===============**/
+	#meet-the-team {
+		padding:60px 0 50px;
+	}
+	#meet-the-team h2 {
+		font-size:37.29px;
+	}
+	#team-members-list {
+		margin-top:50px;
+	}
+	#team-members-list dt:nth-child(2) {
+		margin-bottom:5px;
+	}
+	#team-members-list dt + dd {
+		margin-bottom:16px;
+	}
+	.social {
+		margin-top:18px;
+	}
+
+	/**===================
+		SKILLS
+		===============**/
+	#we-got-skills {
+		padding:60px 0 50px;
+	}
+	#we-got-skills h2 {
+		font-size:37px;
+	}
+
+	/**===================
+		PORTFOLIO
+		===============**/
+	#our-portfolio {
+		padding:60px 0 50px;
+	}
+	#our-portfolio h2 {
+		font-size:37px;
+	}
+
+	/**===================
+		FOOTER
+		===============**/
+	footer a {
+		display:block;
+		padding:10px 12.5px;
+	}
+}
+
+/**===================
+	FONT-FACE
+	===============**/
+@font-face {
+  font-family: 'titillium-reg';
+  src: url('Titillium_Web/TitilliumWeb-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'titillium-bold';
+  src: url('Titillium_Web/TitilliumWeb-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'titillium-semibold';
+  src: url('Titillium_Web/TitilliumWeb-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'titillium-light';
+  src: url('Titillium_Web/TitilliumWeb-Light.ttf') format('truetype');
+}
